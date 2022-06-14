@@ -1,0 +1,27 @@
+{
+  "name": "alfred-bundlephobia-size",
+  "description": "Workflow for Alfred Quering NPM Package Size",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kricsleo/alfred-bundlephobia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kricsleo/alfred-bundlephobia.git"
+  },
+  "author": {
+    "name": "kricsleo",
+    "email": "kriclseo@163.com",
+    "url": "https://github.com/kricsleo"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^6.0",
+    "gulp": "^4.0",
+    "gulp-load-plugins": "^2.0",
+    "gulp-zip": "^5.0"
+  },
+  "scripts": {
+    "build:size": "gulp -f size/gulpfile.js",
+    "build:npm": "gulp -f npm/gulpfile.js",
+    "build": "npm run build:size && npm run build:npm"
+  }
+}
