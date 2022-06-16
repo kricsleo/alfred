@@ -22,6 +22,7 @@
   "scripts": {
     "build:size": "gulp -f size/gulpfile.js",
     "build:npm": "gulp -f npm/gulpfile.js",
-    "build": "npm run build:size && npm run build:npm"
+    "build:mdn": "gulp -f mdn/gulpfile.js",
+    "build": "npm run build:size && npm run build:npm && npm run build:mdn"
   }
 }
