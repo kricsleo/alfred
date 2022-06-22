@@ -68,7 +68,7 @@ if (!empty($data)) {
     foreach ($data as $d):
         $results[] = array(
             'uid' => $d->package->name,
-            'title' => $d->package->name,
+            'title' => $d->package->name . '(' . $d->package->version . ')',
             'subtitle' => strip_tags($d->package->description),
             'arg' => 'https://www.npmjs.com/package/' . $d->package->name,
             'icon' => 'icon.png',
